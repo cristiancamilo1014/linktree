@@ -21,12 +21,12 @@ import {
 } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDMuCW3slvuiwMzIorFiN82hlNJEztUopU",
-  authDomain: "treelink-d9722.firebaseapp.com",
-  projectId: "treelink-d9722",
-  storageBucket: "treelink-d9722.appspot.com",
-  messagingSenderId: "45771368143",
-  appId: "1:45771368143:web:f334b1759edb2debdef9ba",
+  apiKey: process.env.REACT_APP_APIKEY, 
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MASSAGIN_SENDER_ID ,
+  appId: process.env.REACT_APP_ID,
 };
 
 export const app = initializeApp(firebaseConfig);
